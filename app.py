@@ -19,25 +19,3 @@ def predict():
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
-
-
-
-
-# @app.route("/", methods=['GET','POST'])
-# def predict():
-#     if request.method == 'POST':
-#         data = request.form.get('text')
-#         # Make prediction
-#         df = pd.DataFrame([str(data)], columns=['content'])
-#         print(df.head())
-#         pred = model.predict(df)
-#         print(pred)
-#         return render_template('index.html', sentiment=pred['Klasifikasi_berita_hoax'][0])
-#     return render_template('index.html', sentiment='')
-
-
-         
-        # {% if sentiment %}
-        #     <p>The sentiment of the text is: {{sentiment}}</p>
-        #     <p>The probability: {{sentiment_proba}}</p>
-        # {% endif %}
